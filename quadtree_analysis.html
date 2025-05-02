@@ -1,0 +1,58 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>QuadTree Performance Analysis</title>
+        <style>
+            body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+            .section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+            .metric { background-color: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 3px; }
+            .highlight { color: #3498db; font-weight: bold; }
+            img { max-width: 100%; height: auto; margin: 20px 0; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #f8f9fa; }
+        </style>
+    </head>
+    <body>
+        <h1>QuadTree Performance Analysis</h1>
+        
+        <div class="section">
+            <h2>Key Metrics</h2>
+            <div class="metric">
+                <strong>Dataset Size:</strong> 1005 points<br>
+                <strong>QuadTree Search Time:</strong> 0.031ms<br>
+                <strong>Linear Search Time:</strong> 0.119ms<br>
+                <strong>Build Time:</strong> 2.618ms
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Performance Comparison</h2>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Speed-up Factor</td>
+                    <td class="highlight">3.91x</td>
+                    <td>Times faster than linear search</td>
+                </tr>
+                <tr>
+                    <td>Time Complexity</td>
+                    <td>O(log n) vs O(n)</td>
+                    <td>QuadTree vs Linear</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Visualization</h2>
+            <img src="benchmark_results/time_complexity.png" alt="Time Complexity Analysis">
+            <img src="benchmark_results/performance_ratio.png" alt="Performance Ratio">
+        </div>
+    </body>
+    </html>
+    
